@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="messengerbotApp">
+<head>
+	<title>Messengerbot</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+	<div class="face">
+		<div class="eyes-container">
+			<div class="eye-container">
+				<div class="eye"></div>
+			</div>
+			<div class="eye-container">
+				<div class="eye"></div>
+			</div>
+		</div>
+		<div class="mouth"></div>
+	</div>
+	<div ng-view></div>
+</div>
+<footer>Made by <a href="http://jeffersonlam.github.io/">Jefferson Lam</a> | <a href="/">Home</a></footer>
+</body>
+</html>
