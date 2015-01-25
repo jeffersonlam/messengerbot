@@ -7,8 +7,7 @@ messengerbotControllers.controller('homeController', function($scope){
 					'Hello, you!',
 					'sup dawg',
 					'yo dawg',
-					'why hello there',
-					'Greetings!']
+					'why hello there']
 	$scope.randomMessage = messages[Math.floor(Math.random() * messages.length)];
 });
 
