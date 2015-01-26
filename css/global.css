@@ -138,8 +138,7 @@ footer a:visited{
 	h2{
 		font-size: 14pt;
 	}
-}
-
-.nobreak{
-	word-wrap: normal;
+	h1.message{
+		font-size: 18pt;
+	}
 }
