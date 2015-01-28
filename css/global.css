@@ -7,30 +7,77 @@ body, html{
 	margin: 0;
 	padding: 0;
 	font-family: helvetica;
-	max-width: 700px;
-	margin: 0 auto;
 	height: 100%;
+	background-color: #FBFAFB;
+	overflow-x: hidden;
 }
 .container{
+	max-width: 700px;
 	min-height: 100%;
 	padding-top: 60px;
 	padding-bottom: 50px;
-	margin-bottom: -50px;
+	margin: 0 auto -50px auto;
 }
 
 footer{
 	font-size: 10pt;
 	text-align: center;
-	height: 50px;
-	margin-top: 10px;
+	height: 300px;
+	line-height: 290px;
+	font-size: 12pt;
+	/*margin-top: 10px;*/
+	/*background-image: radial-gradient(circle at bottom center, #181668, #0A061B);*/
+	color: white;
+	background: radial-gradient(circle at top center, #0A061B, #181668);
+	background-size: 300% 300%;
+	-webkit-animation: gradientShift 7.5s ease infinite;
+	-moz-animation: gradientShift 7.5s ease infinite;
+	animation: gradientShift 7.5s ease infinite;
 }
+
+footer p:hover{
+	-webkit-animation: pulse 1s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes gradientShift {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes gradientShift {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes gradientShift { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
 h1, h2, h3{
 	padding: 0;
 	margin: 0;
 }
 .window{
 	background-color: #82D6FD;
-	border: 12px solid white;
 	border-radius: 50px;
 	position: relative;
 	text-align: left;
@@ -127,11 +174,11 @@ h1, h2, h3{
 }
 
 footer a{
-	color: black;
+	color: white;
 	text-decoration: dashed;
 }
 footer a:visited{
-	color: black;
+	color: white;
 }
 
 @media (max-width: 600px){
